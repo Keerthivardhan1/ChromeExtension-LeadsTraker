@@ -34,6 +34,7 @@
 
 
     delbtn.addEventListener("dblclick",function(){
+        console.log("delbtn")
         localStorage.clear();
       myleads=[];
       renderleads(myleads);
@@ -75,5 +76,10 @@ var button=null;
         ule.appendChild(li);
       }
 }
+
+deletelink = document.querySelector(".deletelink")
+
+deletelink.addEventListener("click" , ()=>{
+  console.log("delete link ---");
   
- 
+})
